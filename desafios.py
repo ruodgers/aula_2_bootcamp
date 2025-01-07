@@ -48,12 +48,12 @@
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
-import math
-print("exercicio 10")
-raio = float(input("Digite o raio de um circulo: "))
-pi = math.pi
-area_do_circulo = pi*(raio**2)
-print("A área do círculo é", (f"{area_do_circulo:.2f}"))
+# import math
+# print("exercicio 10")
+# raio = float(input("Digite o raio de um circulo: "))
+# pi = math.pi
+# area_do_circulo = pi*(raio**2)
+# print("A área do círculo é", (f"{area_do_circulo:.2f}"))
 
 # #### Strings (`str`)
 
@@ -61,6 +61,20 @@ print("A área do círculo é", (f"{area_do_circulo:.2f}"))
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+print("exercicio 14")
+data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
+lista_dia_mes_ano = data_nasc.split("/")
+print(lista_dia_mes_ano)
+
+
+print("ou") 
+
+data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
+lista_dia_mes_ano = data_nasc.split("/")
+print(f"O dia é", {lista_dia_mes_ano [0]})
+print(f"O mês é", {lista_dia_mes_ano [1]})
+print(f"O ano é", {lista_dia_mes_ano [2]})
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
 # #### Booleanos (`bool`)
