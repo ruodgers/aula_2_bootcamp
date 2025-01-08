@@ -44,9 +44,29 @@
 # print("A soma dos números é", resultado)
 
 
-# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.]
+
+# try:
+#     print("exercicio 7")
+#     valor_a = float(input("Insira um número decimal: "))
+#     valor_b = float(input("Insira outro número decimal: "))
+#     print(("A média dos valores é de", valor_a + valor_b)/2)
+# except:
+#     print(ValueError)
+
+# # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+# print("exercicio 8")
+# base = float(input("insira um número: "))
+# expoente = int(input("insira um valor de expoente: "))
+
+# print("O valor da potenciação é", base**expoente)
+
+# # # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# print("exercicio 9")
+# temp_c = float(input("Insira a temperatura atual em graus Celsius: "))
+# temp_f = ((160 + (9*temp_c))/5)
+# print("A temperatura em graus Fahrenheit é", temp_f )
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 # import math
 # print("exercicio 10")
@@ -55,31 +75,50 @@
 # area_do_circulo = pi*(raio**2)
 # print("A área do círculo é", (f"{area_do_circulo:.2f}"))
 
-# #### Strings (`str`)
+# # #### Strings (`str`)
 
-# 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-# 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-# 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+# # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+# nome = input("insira o seu nome e lestras minúsculas: ")
+# print(nome.upper())
+
+# # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+# print("exercicio 12")
+# nome = (input("insira o seu nome completo: "))
+# print(nome.upper())
+
+
+# # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+# print("exercicio 13")
+# frase = input("escreva uma frase adicionando 3 espaçops no início e no final: ")
+# print(frase.strip())
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-print("exercicio 14")
-data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
-lista_dia_mes_ano = data_nasc.split("/")
-print(lista_dia_mes_ano)
+# print("exercicio 14")
+# data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
+# lista_dia_mes_ano = data_nasc.split("/")
+# print(lista_dia_mes_ano)
 
 
-print("ou") 
+# print("ou") 
 
-data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
-lista_dia_mes_ano = data_nasc.split("/")
-print(f"O dia é", {lista_dia_mes_ano [0]})
-print(f"O mês é", {lista_dia_mes_ano [1]})
-print(f"O ano é", {lista_dia_mes_ano [2]})
+# data_nasc = input("insira sua data de nascimento no formato dd/mm/aaaa: ")
+# lista_dia_mes_ano = data_nasc.split("/")
+# print(f"O dia do seu nascimento é", {lista_dia_mes_ano [0]})
+# print(f"O mês do seu nascimento é", {lista_dia_mes_ano [1]})
+# print(f"O ano do seu nascimento é", {lista_dia_mes_ano [2]})
 
-# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+# # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+# print("exercicio 15")
+# nome = input("insira o seu primeiro nome: ")
+# sobrenome = input("insira o seu ultimo nome: ")
+# print(nome + " " + sobrenome)
+
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
