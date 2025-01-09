@@ -1,49 +1,67 @@
-##sempre que houver intereção com usuário, é necessário prever os erros cometidos por ele no código, a fim de que o programa continue funcionando
-
-
-
-# # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+# # TypeError - Ocorre quando uma operação ou função é aplicada a um objeto de tipo inadequado
+# # Exemplo
 # try:
-#     print("exercicio 4")
-#     valor_a = int(input("Digite um número inteiro: "))
-#     valor_b = int(input("Digite outro número inteiro: "))
-#     resultado = valor_a // valor_b
-#     print("O quociente inteiro dos dois valores é", resultado)
-# except ZeroDivisionError:
-#     print("impossível dividor por zero")
-# except KeyboardInterrupt:
-#     print("acho que você não quis inserir um número")
-# except(ValueError):
-#     print("por favor, insira apenas números inteiros")
-
-
-# ##Type Error, else e finally
-# try: 
-#     nome = "Roger"
-#     resultado = len(3)
-#     print(resultado)
+#     resultado = len(5)
 # except TypeError as e:
 #     print(e) #imprime a mensagem de erro
+
+
+#Type Check - verificação do tipo de vairável. pode usar type() ou isinstance()
+# #exemplo
+# idade = "babuino"
+# if isinstance(idade, int):
+#     print("A variável é um inteiro")
 # else:
-#     print("tudo ocorreu bem")
-# finally:
-#     print("o importante é participar")
+#     print("A variável não é um inteiro", type(idade)) #além de retornar que não é um inteiro, retorna qual o tipo.
+
+#Type Conversion - Conversão de tipo ou casting, permite a conversão de um tipo de variável para outro, por meio de uma converão explícita como str(), float(), int(), etc.
+# # exemplo: soma de um inteiro com um flutuante
+# inteiro = 5
+# flutuante = 2.5
+# #converte o inteiro para flutuante e realiza a soma
+# soma = float(inteiro) + flutuante
+# print(soma) 
+
+#try-except - usada para tratamento de exceções em python. Exceções são erros que ocorrem ao longo do código e se não tatado, interrompe o fluxo e encerra a execução
+# O tratamento de exceções permite que o programa lide com erros de forma elegante e continue a execção sem falhas
+## Try: é o primeiro bloco para tratar exceções
+## except: se algo ocorre dentro do bloco try, a execução pula para o bloco except. é necessário especificar os tipos exceções.
+#específicos para poder tratá-las. Se não forem especificadas, toda serão capturadas.
+# exemplo
+# try:
+#     # código que pode gerar uma exceção
+#     resultado = 10 / 0
+# except ZeroDivisionError:
+#     #código que executa se a exceção ZeroDivisorError for levantada
+#     print("Divisão por zero não é permitida")
 
 
-# ## if isistance - pare verificar  o tipo de variável (pode usar o type também) e retorna uma mensagem apropriada
-# numero = print(input("insira um número: "))
-# if isinstance (numero, int):
-#     print("A variável é um inteiro.")
-# else:
-#     print("A variável não é um inteiro")
+# #outro exemplo
+# num_1 = int(input("Insira um número: "))
+# num_2 = (input("Insira outro número: "))
+# try:
+#     divide = num_1 / int(num_2)
+#     (print(divide))
+# except ZeroDivisionError:
+#     print("Impossível dividir por zero")
+# except TypeError:
+#     print("Tipo de dado informado não permite divisão")
 
 
-#if avalia a condição. Se a condição for satisfeita, ele executa, se não for satisfeita, ele ignora o bloco
-#elif adiciona mais de uma condição
-idade = 20
-if idade < 18:
-    print("Menor de idade")
-elif idade == 18:
-    print("exatamente 18 anos")
-else:
-    print("Maior de idade")
+#if - estrutura que permite executar diferenntes ações com base em condições.
+    #if - Avalia a condições, Se for True, o bloco será executado, se for False, o bloco será ignorado
+    #elife -abreviação de else if, que permite verificar múltiplas condições em sequencia
+    ##else - executa um bloco se todas as condiçõea anteriores if e elif forem falsas
+
+#exemplo
+# idade = input("Insira a sua idade (apenas números): ")
+# try:
+#     if int(idade) < 18:
+#         print("Menor de idade")
+#     elif int(idade) == 18:
+#      print("Exatamente 18 anos")
+#     else:
+#        print("Maior de Idade")
+# except ValueError:
+#    print("Você não digitou somente números")
+
