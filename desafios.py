@@ -117,12 +117,66 @@
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+# print("exercicio 16")
+# ##valores definidos
+# nome_def = "roger"
+# idade_def = "33"
+
+# #usuário insere os valores
+# nome = input("insira o seu nome: ")
+# idade = input("insira a sua idade: ")
+
+# #Avalia se a condição inputada é a mesma
+# resultado_and = (nome_def == nome) and (idade_def == idade)
+
+# if resultado_and: 
+#     print("O nome e a idade estão corretos. Resultado: True")
+# else:
+#     print("O nome e a idade estão incorretos. Resultado: false")
+ 
 
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+# print("exercicio_17")
+# nome_ri = "roger"
+# idade_ri = "33"
+
+# nome = input("insira o seu nome: ")
+# idade = input("insira a sua idade: ")
+
+# #Avalia se a condição inputada é a mesma
+# resultado_or = (nome_ri == nome) or (idade_ri == idade)
+
+# print(resultado_or)
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+# print("exercicio_18")
+
+# valor = bool(input("Se seu nome for roger, digite True. Caso contrário, digite False: "))
+
+# print(not(valor))
+
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+# print("exercicio 19")
+# valor_1 = int(input("insira um número de 0 a 10: "))
+# valor_2 = int(input("insira outro número de 0 a 10, podendo ser repetido: "))
+
+# comparado = (valor_1 == valor_2)
+
+# print(comparado)
+
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+print("exercicio 19")
+valor_1 = int(input("insira um número de 0 a 10: "))
+valor_2 = int(input("insira outro número de 0 a 10, podendo ser repetido: "))
+
+comparado = (valor_1 != valor_2)
+
+print(comparado)
+
+
 
 # #### try-except e if
 
